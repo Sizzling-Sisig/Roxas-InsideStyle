@@ -319,16 +319,21 @@ img {
     }
 }
 
-/* Aboout */
+/* About */
 .aboutSection{
     padding: 3rem;
     background-color: var(--clr-dark);
 }
 
-.aboutSection h2{
-    color: var(--clr-primary);
-    font-size: 3rem;
+.aboutBanner__right h1{
+    font-size: 7rem;
     font-weight: 700;
+    letter-spacing: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.aboutSection p{
+    color: var(--clr-light);
 }
 
 .aboutSection h2::before{
@@ -337,9 +342,9 @@ img {
     content: "";
     background-color: var(--clr-primary);
     height: .2rem;
-    width: 120rem;
+    width: 100rem;
     bottom: 1rem;
-    right: 1rem;
+    right: 0rem;
 }
 
 .aboutSection__wrapper{
@@ -356,6 +361,27 @@ img {
 .aboutSection__right p{
     color: var(--clr-light);
     margin-bottom: 2rem;
+}
+
+.aboutSection__card{
+    background-color: var(--clr-semilight);
+    max-width: 40rem;
+    margin-top: 3rem;
+}
+
+.aboutSection__card img{
+    width: 40rem;
+}
+
+.catalogSection__card--content{
+    padding: 1rem;
+}
+
+.catalogSection__card--content h3{
+    color: var(--clr-secondary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width:520px){
@@ -383,8 +409,8 @@ img {
     position: relative;
     content: "";
     background-color: var(--clr-primary);
-    height: .2rem;
-    width: 120rem;
+    height: .3rem;
+    width: 127rem;
     bottom: 1rem;
     left: 1rem;
 }
@@ -393,7 +419,7 @@ img {
     color: var(--clr-primary);
     font-size: 3rem;
     font-weight: 700;
-  }
+}
 
 .catalogSection__card{
     background-color: var(--clr-semilight);
@@ -425,6 +451,7 @@ img {
         gap: 1rem;
     }
 }
+
 
 /* Call to action */
 
@@ -474,13 +501,237 @@ img {
 /* Footer */
 @media screen and (max-width: 520px){
     .footer__wrapper{
-    flex-direction: column;
+        flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
     }
 }
-/* Repeatable */
+
+/* About Page Banner */
+.aboutBanner{
+    padding: 3rem 0;
+}
+
+.aboutBanner__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.aboutBanner__right{
+max-width: 85rem;
+}
+
+.aboutBanner_right h1{
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.aboutBanner__right p{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.aboutBanner__right ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.aboutBanner__right ul li a{
+    color: var(--clr-dark);   
+    font-size: 2.5rem ;
+}
+
+.aboutBanner__left small{
+margin-left: 1rem;
+}
+
+.aboutBanner__left small::before{
+    display: inline-block;
+    position: relative;
+    content: "";
+    background-color: var(--clr-dark);
+    width: 35.5rem;
+    height: .2rem;
+    bottom: .5rem;
+    right: 1rem;
+}
+
+/* About Page Banner Mobile */
+
+@media screen and (max-width: 520px) {
+    .aboutBanner__left{
+        display: none;
+    }
+    .aboutBanner__right h1{
+        font-size: 4rem;
+    }
+    .aboutBanner__right ul li a{
+        font-size: 1.5rem;
+    }
+}
+
+
+/* About latest */
+.aboutLatest{
+    padding: 4rem 0;
+    background-color: var(--clr-dark);
+}
+
+.aboutLatest__wrapper{
+    display: grid;
+    grid-template-columns: 40rem 40rem 40rem; 
+    gap: 5rem;
+}
+
+.aboutLatest h2{
+    font-size: 3rem;
+    color: var(--clr-primary);
+    font-weight: 700;
+}
+
+.aboutLatest p{
+    color: var(--clr-light);
+}
+
+.aboutLatest__card{
+    background-color: var(--clr-semilight);
+    max-width: 40rem ;
+    margin-top: 3rem ;
+}
+
+.aboutLatest__card img{
+    width: 40rem;
+}
+
+.aboutLatest__card--content{
+    padding: 5rem;
+    font-weight: 500;
+}
+
+.aboutLatest__card--content h3{
+    color: var(--clr-secondary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.aboutLatest__card--content p{
+    color: var(--clr-dark);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+@media screen and (max-width: 520px){
+    .aboutLatest__wrapper{
+        grid-template-columns: 40rem;
+        gap: 1rem;
+    }
+}
+
+/*CATALOG PAGE*/
+
+.catalogBanner__bg{
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url(./img/catalog-banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* to center the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.catalogBanner h2{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--clr-primary);                
+}
+
+/* INTERIOR PACKAGE */
+
+.package h2{
+    color: var(--clr-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem;
+}
+  
+  .package__theme{
+    padding: 5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+  .package__left{
+    width: 500rem;
+    margin-left: 10rem;
+    justify-content: center;
+}
+  
+  .package__right h2{
+    color: var(--clr-primary);
+    display: flex;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+  .package__right p{
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 19rem;
+  }
+
+  /* reversing */
+
+  .package__theme:nth-child(odd){
+    background-color: var(--clr-semilight);
+    flex-direction: row-reverse;
+  }
+
+/* UPDATES */
+
+ .updates h2 {
+    color: var(--clr-primary);
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem 10;
+  }
+
+ .updates__theme{
+    display: flex;
+    gap:  2rem;
+}  
+
+/* CONTACTS PAGE */
+.contactUs {
+    padding: 3rem 0;
+  }
+  .contactUs h1{
+   font-size: 7rem;
+   font-weight: 700rem; 
+   color: var(--clr-primary);
+  } 
+  .contactUs p{
+    font-size: 2rem;
+  }
+
+/*REPEATABLE*/
+
 .btn{
     background-color: transparent;
     border: transparent;
@@ -507,6 +758,6 @@ img {
 }
 
 .btn--nobg:hover{
-    color: var(--clr-primary);
-    
+    color: var(--clr-primary);   
+
 }
