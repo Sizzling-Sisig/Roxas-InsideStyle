@@ -119,7 +119,8 @@ a{
 img {
     max-width: 100%;
 }
-  /* Margin */
+  /* MARGIN */
+
 .container {
     width: 100%;
     max-width: 150rem;
@@ -127,7 +128,8 @@ img {
     padding: 0 5rem;
 }
 
-  /* Header */
+  /* HEADER */
+
 .header{
     padding: 2rem 0;
     background-color: var(--clr-semilight);
@@ -155,7 +157,7 @@ img {
     color: var(--clr-primary);
 }
 
-/* Mobile Responsive */
+/* MOBILE RESPONSIVE */
 .header .toggle__menu span{
     color: var(--clr-primary);
     width: 3rem;
@@ -224,7 +226,8 @@ img {
 }
 
 
-/* Top */
+/* TOP */
+
 .top{
     background-color: var(--clr-secondary);
     padding: 3rem 0;
@@ -243,7 +246,8 @@ img {
     font-weight: 700;
 }
 
-/* Home Banner */
+/* HOME BANNER */
+
 .homeBanner{
     padding: 3rem;
     padding-bottom: 7rem;
@@ -319,7 +323,8 @@ img {
     }
 }
 
-/* About */
+/* ABOUT */
+
 .aboutSection{
     padding: 3rem;
     background-color: var(--clr-dark);
@@ -369,6 +374,12 @@ img {
     margin-top: 3rem;
 }
 
+.aboutSection h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--clr-primary);
+}
+
 .aboutSection__card img{
     width: 40rem;
 }
@@ -393,7 +404,8 @@ img {
     }
 }
 
-/* Catalog Secton */
+/* CATALOG SECTION */
+
 .catalogSection{
     padding: 3rem 0;
 }
@@ -452,8 +464,7 @@ img {
     }
 }
 
-
-/* Call to action */
+/* CALL TO ACTION */
 
 .cta{
     padding: 3rem 0;
@@ -477,7 +488,8 @@ img {
     margin-bottom: 1rem;
 }
 
-/* Footer */
+/* FOOTER */
+
 .footer{
     background-color: var(--clr-dark);
     color: var(--clr-semilight);
@@ -498,7 +510,8 @@ img {
     color: var(--clr-semilight);
 }
 
-/* Footer */
+/* FOOTER MOBILE */
+
 @media screen and (max-width: 520px){
     .footer__wrapper{
         flex-direction: column;
@@ -507,7 +520,7 @@ img {
     }
 }
 
-/* About Page Banner */
+/* ABOUT BANNER PAGE */
 .aboutBanner{
     padding: 3rem 0;
 }
@@ -560,7 +573,7 @@ margin-left: 1rem;
     right: 1rem;
 }
 
-/* About Page Banner Mobile */
+/* ABOUT PAGE BANNER MOBILE */
 
 @media screen and (max-width: 520px) {
     .aboutBanner__left{
@@ -575,7 +588,7 @@ margin-left: 1rem;
 }
 
 
-/* About latest */
+/* ABOUT LATEST */
 .aboutLatest{
     padding: 4rem 0;
     background-color: var(--clr-dark);
@@ -599,8 +612,8 @@ margin-left: 1rem;
 
 .aboutLatest__card{
     background-color: var(--clr-semilight);
-    max-width: 40rem ;
-    margin-top: 3rem ;
+    max-width: 40rem;
+    margin-top: 3rem;
 }
 
 .aboutLatest__card img{
@@ -645,7 +658,7 @@ margin-left: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* to center the text */
+    /* TO CENTER THE TEXT */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -668,67 +681,218 @@ margin-left: 1rem;
     padding: 3rem;
 }
   
-  .package__theme{
+.package__theme{
     padding: 5rem;
     display: flex;
     gap: 0.5rem;
 }
 
-  .package__left{
+.package__left{
     width: 500rem;
     margin-left: 10rem;
     justify-content: center;
 }
-  
-  .package__right h2{
-    color: var(--clr-primary);
-    display: flex;
-    font-size: 6rem;
-    font-weight: 700;
-    text-align: center;
+
+.package__right{
+    align-items: center;
 }
 
-  .package__right p{
+.package__right h2{
+    color: var(--clr-primary);
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.package__right p{
     font-size: 2rem;
-    text-align: justify;
-    margin-left: 2.5rem;
-    margin-right: 19rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
-  /* reversing */
+  /* REVERSING */
 
-  .package__theme:nth-child(odd){
+.package__theme:nth-child(odd){
     background-color: var(--clr-semilight);
     flex-direction: row-reverse;
-  }
+}
 
 /* UPDATES */
 
- .updates h2 {
-    color: var(--clr-primary);
-    font-size: 6rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 3rem 10;
-  }
+.about{
+    padding: 50px 0;
+}
 
- .updates__theme{
+.catalog__wrapper h2{
+    color: var(--clr-secondary);
     display: flex;
-    gap:  2rem;
-}  
+    margin-bottom: 20px;
+    font-size: 45px;
+}
 
-/* CONTACTS PAGE */
-.contactUs {
-    padding: 3rem 0;
-  }
-  .contactUs h1{
-   font-size: 7rem;
-   font-weight: 700rem; 
-   color: var(--clr-primary);
-  } 
-  .contactUs p{
-    font-size: 2rem;
-  }
+.about__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+/* .about__content{
+    padding: 50px 0;
+    max-width: 300px;
+    width: 100%;
+} */
+
+.about__content h1{
+    font-weight: 700;
+    /* margin-bottom: 20rem; */
+    font-size: 70px;
+    text-align: center;
+    color: var(--clr-primary);
+    margin: 5rem;
+}
+
+.about__content p{
+    max-width: 88rem;
+    /* width: 0; */
+}
+
+/* CATALOG */
+
+.catalog{
+    padding: 50px 0;
+}
+
+.catalog__wrapper{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 20px 0;
+}
+
+.catalog__wrapper h2{
+    display: flex;
+    gap: 3rem;
+    font-weight: 700;
+}
+
+.catalog__card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.card{
+    padding: 5rem;
+    background: var(--clr-semilight);
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--clr-dark);
+}
+
+.card h4{
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--clr-dark);
+    align-content: center;
+    font-weight: 700;
+}
+
+.catalog__right ul li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    gap: 1rem;
+}
+
+.catalog__right{
+    margin-left: 3rem;
+}
+
+/* RECENT PROJECTS */
+
+.project{
+    padding: 50px;
+}
+
+.project h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+    color: var(--clr-primary);
+}
+
+.project__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.project__wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.project__wrapper img{
+    max-width: 45.5 rem;
+    width: 120rem;
+    margin-bottom: 5px;
+}
+
+.contactSection{
+    padding: 5rem 0;
+}
+
+.contactSection__wrapper h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    color: var(--clr-primary);
+}
+
+.contactSection__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contactSection__form input,
+.contactSection__form textarea{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 1rem 2rem;
+}
+
+.contactSection__form button{
+    margin-top: 2rem;
+    color: var(--clr-light);
+    width: 100%;
+    padding: .5rem;
+    background-color: var(--clr-dark);
+    border: none;
+    border-radius: 2rem;
+}
+
+.contactSection__info{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    padding: 2rem;
+}
+
+.contactSection__info ul li{
+    align-items: center;
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 3rem;
+}
+
+.contactSection__info ul li i{
+    font-size: 3rem;
+}
 
 /*REPEATABLE*/
 
@@ -744,8 +908,7 @@ margin-left: 1rem;
 
 .btn.bg--semi-light{
     background-color: var(--clr-semilight);
-    color: var(--clr-dark);
-    
+    color: var(--clr-dark); 
 }
 
 .btn.bg--semi-light:hover{
@@ -759,5 +922,4 @@ margin-left: 1rem;
 
 .btn--nobg:hover{
     color: var(--clr-primary);   
-
 }
